@@ -1,8 +1,3 @@
-/*
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 (function($) {
 
@@ -19,7 +14,12 @@
 
 		var	$window = $(window),
 			$body = $('body'),
-			$wrapper = $('#wrapper');
+      $wrapper = $('#wrapper');
+      
+    $('input[type=submit]').on('click', function(e) {
+      e.preventDefault();
+      alert('This feature is currently not available.');
+    });
 
 		// Disable animations/transitions until the page has loaded.
 			$body.addClass('is-loading');
